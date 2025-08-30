@@ -72,5 +72,4 @@ if st.button('Predict Price', type="primary", use_container_width=True):
     predicted_price = np.expm1(prediction_log[0])
     
     # --- Display the Result ---
-    st.success(f"**Estimated Property Price:**")
-    st.markdown(f"## **${predicted_price:,.0f}**")
+    st.success(f"**Estimated Property Price: ${predicted_price:,.0f} AUD**")
